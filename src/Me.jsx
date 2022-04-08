@@ -1,7 +1,8 @@
-import photo from './photos/me.jpg';
+import photo from '/photos/me.jpg';
 import { useState, useEffect } from 'react';
 import Popup from 'reactjs-popup';
-import AdSquare from './AdSquare';
+
+
 
 
 
@@ -17,14 +18,12 @@ export default function Me () {
             onClick={() => setSpin(!spin)}
           />
         </div>
-        {/* <AdSquare /> */}
-        <div className="m-auto bg-gray-500 border-2 border-slate-500">
-          <p className="bg-blue-400 p-5 h-fit">ad</p>
-        </div>
       </div>
 
-      <span className="text-2xl">This is a photo of what I look like </span>
-      <span onClick={() => setModalOpen(!modalOpen)} className='text-2xl'>(Click Me!)</span>
+      <span className="text-2xl font-serif font-bold">
+        This is a photo of what I look like 
+      </span>
+      <span onClick={() => setModalOpen(!modalOpen)} className='text-2xl '> (Click Me!)</span>
       <Popup open={modalOpen}
         position="top center"
         modal
@@ -38,11 +37,11 @@ export default function Me () {
         </div>
       </Popup>
 
-      <p>
+      {/* <p>
         "I am a software engineer with a passion for building 
         things that people love. I love to code and I am a huge 
         fan of the open source community." - github copilot
-      </p>
+      </p> */}
       <p> 
         
       </p>

@@ -1,4 +1,4 @@
-import downloadButton from "./photos/downloadButton.jpg";
+import downloadButton from "/photos/downloadButton.jpg";
 
 export default function DownloadBanner() {
 
